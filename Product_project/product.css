@@ -12,19 +12,27 @@ h1{
   flex-direction: row;
   background-color:  #ACD1e9;
 }
-ul{
+#ul{
   background-color: #008080;
   list-style-type: none;
   overflow: hidden;
 
 }
+.gtypes{
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  font-family: monospace
 
-li{
+
+}
+
+.li{
 float: left;
 
 }
 
-li a{
+.nav-link{
   display: block;
   color: white;
   text-decoration: none;
@@ -49,14 +57,21 @@ li a{
 #container{
   margin: 150px auto;
 }
+footer{
+background-color: #6D929B;
+color: white;
+
+
+
+}
 @media only screen and (max-width:720px) {
   #shopping{
     display: flex;
     flex-direction: column;
   }
 
-/*  #container{
+ #container{
     width: 100%;
-  }*/
+  }
 
 }
