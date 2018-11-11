@@ -1,0 +1,255 @@
+<!Doctype HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="python.css" type="text/css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="title">Python: Tutorial</header>
+      <ul id="top">
+        <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+        <a class="nav-link" href="#Hello_World" rel="internal"><li>Hello World</li></a>
+        <a class="nav-link" href="#Variables" rel="internal"><li>Variables</li></a>
+        <a class="nav-link" href="#Data_Types" rel="internal"><li>Data Types</li></a>
+        <a class="nav-link" href="#Operators" rel="internal"><li>Operators</li></a>
+        <a class="nav-link" href="#If_else_statement" rel="internal"><li>If else statement</li></a>
+        <a class="nav-link" href="#While_loop" rel="internal"><li>While loop</li></a>
+        <a class="nav-link" href="#For_loop" rel="internal"><li>For loop</li></a>
+        <a class="nav-link" href="#Functions" rel="internal"><li>Functions</li></a>
+        <a class="nav-link" href="#References" rel="internal"><li>References</li></a>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="header">Introduction</header>
+        <p class="para">Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.  It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis on code readability, and its syntax allows programmers to express concepts in fewer lines of code. Python source files use the ".py" extension and are called "modules." Like other OOLs, Python is also case-senistive which implies "a" and "A" are different variables. Now, without any delay, let's dig into the beautiful Python world.</p>
+        <code class="code"></code>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header  class="header">Hello World</header>
+        <p class="para">Let's take our first step on Python with Hello World program. As, python needs no type declarations for the variables or functions, we can start promptly with the following code.</br> Open any IDE that supports Python or click this link to open an online compiler for <a id="compiler" href="https://www.onlinegdb.com/online_python_compiler">Python</a>, and type in the following syntax:</p>
+        <code class="code">print("Hello, World!")</code>
+        <p class="para">Run the program, and that's it. You should receive "Hello, World!" printed in your console. Congratulations! You have made your first program on Python.</p>
+      </section>
+      <section class="main-section" id="Variables" >
+        <header class="header">Variables</header>
+        <p class="para">Variables are the reserved locations to store values. Python doesn't need any explicit declaration to reserve memory sapce. The declaration happens once you assign a value to a variable. Variables are simply declared by:</p>
+        <code class="code">x=1  #an integer </br>x=1.5  #a floating point</br>x="author"  #a string </code>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header class="header">Data Types</header>
+        <p class="para">There are five types of data types in Python:</p>
+          <ol class="data">
+            <li class="datas">Numbers</li>
+            Python supports four types of numerical data types: int (signed integers), long(unsigned integers), float(floating point real values), and complex(complex numbers).
+            <li class="datas">String</li>
+            Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end. You can concatenate two string using '+' operator. For example:
+            <code class="code"></br></br>x="Hello"</br>y=" World"</br>print x+y   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#prints Hello World to the console</br></br></code>
+            <li class="datas">List</li>
+            A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type. The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. For example:
+            <code class="code"></br></br>list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]</br>tinylist = [123, 'john']
+                </br>print list         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp # Prints complete list
+                </br>print list[0]       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp# Prints first element of the list
+                </br>print list[2:]      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp# Prints elements starting from 3rd element
+                </br>print tinylist * 2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp# Prints list two times
+                </br>print list + tinylist &nbsp;&nbsp;&nbsp;&nbsp;&nbsp# Prints concatenated lists</br></code>
+            <li class="datas">Tuple</li>
+            A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses. The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists. You can perform example on the List with the Tuple in the console. What did you learn?
+            <li class="datas">Dictionary</li>
+            Python's dictionaries are kind of hash table type.  A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object. Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example: </br>
+            <code class="code"></br>dict={1:"author",2:"composer",3:"singer"}
+            </br>print dict &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#prints complete dictionary
+            </br>print dict.keys() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#prints all the keys
+          </br>print dict.values() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#print all the values></code>
+          </ol>
+      </section>
+      <section class="main-section" id="Operators">
+        <header class="header">Operators</header>
+        <p class="para">Operators are the construct which can manipulate the operands. Operands can be variabels. There are various types of opearators in Python. They are as follows:
+          <ol>
+            <li class="datas">Arithmetic Operators</li>
+            The Arithmetic Operators includes:
+            <table class="ao" border="0">
+              <tr class="ttitle">
+                <th>Operator</th>
+                <th>What it does?</th>
+                <th>Example</th>
+              </tr>
+              <tr>
+                <td>+</td>
+                <td>Adds value of the opearands</td>
+                <td>a=20</br>b=20</br>a+b=40</br></td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>Gives the difference of the two operands(left to right)</td>
+                <td>a=20</br>b=20</br>a-b=0</br></td>
+              </tr>
+              <tr>
+                  <td>*</td>
+                  <td>Gives the product of the opearands</td>
+                  <td>a=20</br>b=20</br>a*b=400</br></td>
+              </tr>
+              <tr>
+                    <td>/</td>
+                    <td>Gives the quotient of the opearands(left divided by right)</td>
+                    <td>a=20</br>b=20</br>a/b=1</br></td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>Gives the remainder of the operands(left divided by right)</td>
+                <td>a=20</br>b=20</br>a%b=0</br></td>
+              </tr>
+              <tr>
+                <td>**</td>
+                <td>Performs exponential operations on the operands</td>
+                <td>a=3</br>b=3</br>a**b=27 (a to the power b)</br></td>
+              </tr>
+              <tr>
+                <td>//</td>
+                <td>Does the floor division. Gives the quotient excluding the remainder when operands are positive. If one of the operands is negative, the result is floored i.e. away from zero.</td>
+                <td>a=20, b=3</br>a//b=6</br>a=20, b=-3</br>a//b=-7</td>
+              </tr>
+            </table>
+            <li class="datas">Relational Operators</li>
+            Relational Operators give the boolean value by comparing the operands.
+            <table class="ao" border="0">
+              <tr class="ttitle">
+                <th>Operator</th>
+                <th>What it does?</th>
+                <th>Example</th>
+              </tr>
+              <tr>
+                <td>==</td>
+                <td>If operands are equal, then the condition is true</td>
+                <td>a=20</br>b=20</br>(a==b) is true</br></td>
+              </tr>
+              <tr>
+                <td>!= or <></td>
+                <td>If operands are not equal, then the condition is true</td>
+                <td>a=20</br>b=20</br>(a!=b) is false</br></td>
+              </tr>
+              <tr>
+                  <td>></td>
+                  <td>If left side operand is greater than the right side, the condition is true.</td>
+                  <td>a=20</br>b=10</br>(a>b) is true</br></td>
+              </tr>
+              <tr>
+                  <td><</td>
+                  <td>If right side operand is greater than the left side, the condition is true.</td>
+                  <td>a=20</br>b=10</br>(a&ltb) is false</br></td>
+              </tr>
+              <tr>
+                <td>>=</td>
+                <td>If left side operand is greater than or equal to the right side, the condition is true.</td>
+                <td>a=20</br>b=20</br>(a>=b) is true</br></td>
+              </tr>
+              <tr>
+                <td><=</td>
+                <td>If right side operand is greater than or equal to the left side, the condition is true.</td>
+                <td>a=20</br>b=20</br>(a<=b) is true</br></td>
+              </tr>
+            </table>
+            <li class="datas">Assignment Operators</li>
+            <p class=para></br>a=5 assigns value 5 to the variable a.</br>a+=5 assigns the variable 5 and add it with the previous value. i.e.</p>
+            <code class="code"></br> a=5</br>a+=5</br>print a #displays 10 in the console.</code>
+            <p class="para"></br>Similarly, you can try this with all the arithmetic operators.</p>
+            <li class="datas">Logical Operators</li>
+            <p class="para">Python has three logical operators: and, or, Not.</p>
+            <table class="ao" border="0">
+              <tr class="ttitle">
+                <th>Operator</th>
+                <th>What it does?</th>
+                <th>Example</th>
+              </tr>
+              <tr>
+                <td>and</td>
+                <td>If both operands are true, then the condition is true</td>
+                <td>a is true</br>b is true</br>(a and b) is true</br></td>
+              </tr>
+              <tr>
+                <td>or</td>
+                <td>If one of the operands is true, then the condition is true</td>
+                <td>a is true</br>b is false</br>(a or b) is true</br></td>
+              </tr>
+              <tr>
+                  <td>Not</td>
+                  <td>This reverses the logical state.</td>
+                  <td>a is true</br>Not(a) is false</br></td>
+              </tr>
+              <table>
+            <li class="datas">Bitwise Operators</li>
+            <p class="para">You can click the following link if you want to learn about Bitwise operators.</br><a href="https://www.tutorialspoint.com/python/bitwise_operators_example.htm" target="_blank">This will take you to the the other link</a></p>
+            <li class="datas">Membership Operators</li>
+            <p class="para">Python’s membership operators test for membership in a sequence, such as strings, lists, or tuples. There are two Membership operators in Python.</p>
+            <table class="ao" border="0">
+              <tr class="ttitle">
+                <th>Operator</th>
+                <th>What it does?</th>
+                <th>Example</th>
+              </tr>
+              <tr>
+                <td>in</td>
+                <td>If it finds the variable in the specified sequence, it returns true.</td>
+                <td>a in b</br>here the result is 1 if a is a member of sequence b</td>
+              </tr>
+              <tr>
+                <td>not in</td>
+                <td>If it doesn't find the variable in the specified sequence, it returns true.</td>
+                <td>a not in b</br>here the result is 1 if a is a not a member of sequence b</br></td>
+              </tr>
+              <table>
+            <li class="datas">Identity Operators</li>
+            <p class="para">Identity operators compare the memory locations of two objects.</p>
+            <table class="ao" border="0">
+              <tr class="ttitle">
+                <th>Operator</th>
+                <th>What it does?</th>
+                <th>Example</th>
+              </tr>
+              <tr>
+                <td>is</td>
+                <td>Evaluates true if both operands point to the same object.</td>
+                <td>a is b</br>here the result is 1 if id(a) equals to id(b)</td>
+              </tr>
+              <tr>
+                <td>is not</td>
+                <td>Evaluates true if both operands don't point to the same object.</td>
+                <td>a is not b</br>here the result is 1 if id(a) doesn't equal to id(b)</td>
+              </tr>
+            </table>
+          </ol>
+        </p>
+      </section>
+      <section class="main-section" id="If_else_statement">
+        <header class="header">If else statement</header>
+        <p class="para">Decision making is significant part of every programming language. It means anticipating a condition and defining the sequence of events for the condition occured.</br>In Python, like most of the programming languages, you can use if statement, or if-else statements or nested if statements for the purpose.</br>Here are some codes you can try on your Python console:</p>
+        <code class="code"></br>a=5</br>b=6</br>if (a>b):print "a is greater than b"</br></br>#using if else statement</br></br>if(a>b):print "a is greater than b"</br>else: print "a is not greater than b"</br></br>#Using the if-else statements for multiple sequence of conditions</br></br>if(a>b):print "a is greater than b"</br>elif(a==b): print "a is equal to b"</br>else: print "a is not greater than b"</code>
+      </section>
+      <section class="main-section" id="While_loop">
+        <header class="header">While loop</header>
+        <p class="para">While loop executes the given statement until the condition is satisfied true. For example:</p>
+        <code class="code"></br>a=5</br>while(a<7):</br>a+1</br>print "I am learning Python"</br></br>#prints the string twice in the console</br>#until the condition is true</code>
+      </section>
+      <section class="main-section" id="For_loop" >
+        <header class="header">For loop</header>
+        <p class="para">For loop can be used to iterate over iterators in the given range. You can iterate over Lists, Tuples, Strings, Dictinaries, or any other data types. For example:</p>
+        <code class="code"></br>#List</br>list1=["chicago","new york","seattle"]</br>for i in list1:</br>print (i)</br>#prints each element of the list</code>
+        <p class="para">You can try it with tuples or string and try playing with the codes.</p>
+      </section>
+      <section class="main-section" id="Functions" >
+        <header class="header">Functions</header>
+        <p class="para">A function is an organized piece of code that can be used to perform a certain action. It helps your program to be organized and provides modularity to the application.<br><strong>Some things to remember:</strong></br></br>Functions in Python begin with the keyword def followed by the function name and parenthesis (parameters).</br>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</br>The code block starts after the colon (:) and indentation.</br>The return statement exits the function and the caller of the function gets the returned value. A return statement with no arguments is similar to return statement with None.</br>You can try following codes into your Python console and have your hands in functions. You are taking your programming skills to next level.</p>
+        <code class="code"></br>def sum(a,b)</br>&nbsp;&nbsp;&nbsp;"This gives the sum of the passed numbers"</br>&nbsp;&nbsp;&nbsp;c=a+b</br>&nbsp;&nbsp;&nbsp;return c;</br></br>#Call the function</br>a=5</br>b=10</br></br> c=sum(a,b)</br>print c</br>#prints the sum 15 to the console</code>
+        <p class="para">Now, try modifying the sum function such that it itself prints the sum to the console.</p>
+      </section>
+      <section class="main-section" id="References">
+        <header class="header">References</header>
+        <p class="para"><a href="https://www.tutorialspoint.com">Tutorials Point</a></br><a href="https://www.python.org">Python</a></p>
+      </section>
+
+    </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
