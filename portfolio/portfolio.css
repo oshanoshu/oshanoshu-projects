@@ -1,0 +1,127 @@
+body{
+  background-color: lightcoral;
+}
+#welcome-section{
+  height: 100vh;
+  background-color: teal;
+  margin-top: 0px;
+}
+#Introduction{
+  text-align: center;
+  margin: 40vh;
+  color:#ffc5c6;
+  animation-name: title;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#title{
+  font-family: monospace;
+  font-size: 40px;
+  color: #ffc5c6;
+  margin: 0px;
+  margin-left: 20px;
+}
+.menu-btn{
+  border-color: transparent;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 30px;
+  margin-top: 50px;
+  background-color: #51A5BA;
+  cursor: pointer;
+  padding: 16px;
+  transition: 0.25s ease-in;
+}
+.menu-content{
+  display: none;
+ position: fixed;
+ background-color: #51a5ba;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+ border: solid;
+ border-color: #51A5BA;
+ text-align: center;
+}
+.menu-btn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: teal;
+  color: #ffc5c6;
+}
+.nav-bar:hover .menu-content{
+  display:block;
+}
+.nav-bar a:hover{
+  background-color: teal;
+}
+.nav-bar{
+  position: fixed;
+  display: block;
+}
+.menu-content a{
+    color: #ffc5c6;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+@keyframes title {
+  0% {color: blue;}
+  50% {color: #ff5959;}
+  100% {color: #ffc5c6;}
+}
+#main-doc{
+  margin-left: 150px;
+  margin-right:50px;
+}
+.aboutme{
+  margin-top: 30px;
+  display: flex;
+}
+.about{
+  margin-left: 20px;
+  font-size: 25px;
+}
+#projects{
+  display: flex;
+  justify-content: space-between;
+}
+.projectlink{
+  text-decoration: none;
+  color: teal;
+}
+img{
+  border: solid;
+
+}
+#Links{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+main h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  color: darkblue;
+}
+.links{
+  border: none;
+  width: 100px;
+}
+@media only screen and(maxwidth:850px) {
+  #projects{
+    flex-direction: column;
+  }
+  .aboutme{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
