@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1 id="title">Welcome to ChatBot Survey</h1>
+      <div id=main>
+    <p id="description">This survey is based on your personal opinion towards the ChatBot. You are not obliged to do this survey, the data you provided will only be used for study purpose without inclusion of your personal identity.</p>
+    <form id="survey-form">
+      <div class="Personal">
+        <label id="name-label">Name: </br></label>
+
+      <input type="text" name="name" id="name" placeholder="Your Name eg: John Smith" required></br>
+    </div>
+    <div class="Personal">
+      <label id="email-label">Email: </br></label>
+      <input type="email" name="email" id="email" placeholder="Your Email eg: john123@xyz.com" required></br>
+    </div>
+      <div class="Personal">
+      <label id="number-label">Phone Number: </br></label>
+      <input type="number" id="number" max="10000000000" min="999999999" placeholder="eg: 1234567890"></br>
+      </div>
+      <fieldset>
+      <legend>How do you recognize yourself?</br></legend>
+      <select id="dropdown">
+        <option value="Full-time Worker">Full-time Worker</option>
+        <option value="Part-time Worker">Part-time Worker</option>
+        <option value="Self-employed">Self-employed</option>
+        <option value="Unemployed">Unemployed</option>
+        <option value="Student">Student</option>
+      </select>
+      </fieldset>
+      <fieldset>
+        <legend>How likely are you to consider using such ChatBot?</br></legend>
+        <label for="Yes">Yes</label>
+        <input type="radio" name="Reaction" id="Yes" value="Yes"></br>
+        <label for="No">No</label>
+        <input type="radio" name="Reaction" id="No" value="No"></br>
+        <label for="Maybe">May be!</label>
+        <input type="radio" name="Reaction" id="Maybe" value="Maybe"></br>
+      </fieldset>
+      <fieldset>
+        <legend>How satisfied were you with the ChatBot-interaction?</br></legend>
+        <label for="choice1">Very Satisfied</label>
+        <input type="checkbox" name="React" id="choice1" value="choice1"></br>
+        <label for="choice2">Satisifed</label>
+        <input type="checkbox" name="React" id="choice2" value="choice2"></br>
+        <label for="choice3">No Comment</label>
+        <input type="checkbox" name="React" id="choice3" value="choice3"></br>
+        <label for="choice4">Dissatisfied</label>
+        <input type="checkbox" name="React" id="choice4" value="choice4"></br>
+        <label for="choice5">Very Dissatisfied</label>
+        <input type="checkbox" name="React" id="choice5" value="choice5"></br>
+      </fieldset>
+      <label for="textarea">Write your views on ChatBot:</br></label>
+      <textarea name="comment" style="background-color: #ECF2e9;" id="textarea"></textarea>
+      <div class="submit">
+        <input type="submit" value="Submit" id="submit">
+      </div>
+
+
+    </div>
+
+  </body>
+</html>

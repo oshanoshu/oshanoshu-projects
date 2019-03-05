@@ -1,0 +1,100 @@
+#chatbot{
+  height: 70vh;
+  width: 50vw;
+  margin-left:25vw;
+
+}
+
+body{
+  background-color: #9ec185;
+  font-family: "Lucida Grande", sans-serif;
+}
+
+#main{
+  background-color: #EBF8E3;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  width:70%;
+
+}
+
+h1{
+  font-size: 40px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+#description{
+  font-size: 20px;
+  color: #1A3d00;
+  display: block;
+  width: inherit;
+  margin: 10px auto;
+}
+
+.Personal{
+  text-align: center;
+  color: #1A3d00;
+}
+label{
+  font-size: 20px;
+  margin:10px;
+
+}
+
+input{
+  height: 29px;
+  width: 300px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+fieldset{
+  font-size:20px;
+  min-width: 400px;
+  width: inherit;
+  margin: 20px;
+
+}
+legend{
+  color: #1A3d00;
+}
+select{
+  height: 24px;
+  width: 50%;
+  background-color: #EAFDDD;
+  font-weight: 500;
+}
+textarea{
+  margin: 10px;
+  height: 90px;
+  width: 70%;
+  font-size: 18px;
+  border-radius: 5px;
+
+}
+#stats{
+  color: #CCCC99;
+}
+.submit{
+  text-align: center;
+}
+#submit{
+  height: 30px;
+  text-align: center;
+  font-size: 22px;
+  background-color: #376318;
+  color: #EDEFEC;
+}
+footer{
+  text-align: center;
+}
+@media only screen and(maxwidth:850px) {
+
+  #chatbot{
+    width: 100vw;
+    height: 50vh;
+    margin-left: 0vw;
+  }
+}
